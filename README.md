@@ -14,7 +14,7 @@ This is a Terrafrom module to TODO
 module "example" {
   source = "git::https://github.com/TODO.git?ref=v0.0.0"
 
-  # aws_region = "us-east-1"
+  # providers = { aws = aws.use1 }
 
 }
 ```

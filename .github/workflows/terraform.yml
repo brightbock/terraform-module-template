@@ -13,7 +13,7 @@ jobs:
     name: Style
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Format
         run: terraform version && terraform fmt -diff -check -recursive
@@ -22,7 +22,7 @@ jobs:
     name: Functionality
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Init
         run: terraform init -backend=false
